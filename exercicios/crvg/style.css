@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+/*Fontes Nº1*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Fontes Nº2*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Fontes Nº3*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --cor01: #111111;
+    --cor02: #1E1E1E;
+    --cor03: #F5F5F5;
+    --cor04: #C8102E;
+    --cor05: #D4A017;
+    --cor06: #B0B0B0;
+    --cor07: #474747;
+
+
+    --fonte-v1: "Playfair Display SC", serif;
+    --fonte-d1: "Open Sans", sans-serif;
+    --fonte-p1: Arial, Helvetica, sans-serif;
+
+    --fonte-v2: "Bebas Neue", sans-serif;;
+    --fonte-d2: "Roboto", sans-serif;
+    --fonte-p2: Arial, Helvetica, sans-serif;
+
+    --fonte-v3: "Cinzel", serif;
+    --fonte-d3: "Montserrat", sans-serif;
+    --fonte-p3: Arial, Helvetica, sans-serif;
+
+    
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:var(--cor01);
+    color: var(--cor01);
+    font-family: var(--fonte-d1);
+}
+
+a.externo::after{ /*Todos os links que forem da classe externo, que são para outro site, ele estará com o emoji do link, então quando for um link externo acrescentar a class="externo"; para que o emoji apareça*/
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor07), var(--cor01));
+    min-height: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: var(--cor03);
+    font-size: 3em;
+    font-family: var(--fonte-v1);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px #b0b0b0a1;
+}
+
+header > p{
+    color: var(--cor03);
+    font-family: var(--fonte-d1);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 6px #B0B0B0;
+}
+
+nav{
+    background-color: var(--cor01);
+    text-align: right;
+    padding-right: 15px;
+    padding: 20px;
+    box-shadow: -5px 5px 5px -5px #b0b0b06b;
+}
+
+nav > a{
+    color: var(--cor03);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    font-size: clamp(.8rem, 1.5vw, 1em); /*Diminui o texto de acordo com o tamanho da tela*/
+    margin: auto;
+}
+
+nav > a:hover{
+    background-color: var(--cor06);
+    color: var(--cor01);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1500px;
+    margin: auto;
+    background-color: var(--cor03);
+    padding: 20px;
+    box-shadow: 0px 2px 10px #f5f5f579;
+    margin-bottom: 0px;
+
+}
+
+main h1{
+    color: var(--cor02);
+    font-family: var(--fonte-v2);
+    font-size: 3em;
+}
+
+main h2{
+    font-family: var(--fonte-v3);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    color: var(--cor03);
+    padding-top: 10px;
+    padding-bottom: 8px;
+    text-indent: 10px;
+}
+
+main h3{
+    background-color: var(--cor04);
+    font-size: clamp(1.2rem, 1.5vw, 1em); /*Diminui o texto de acordo com o tamanho da tela*/
+    padding: 5px;
+    border-top-left-radius: 10px;
+    
+}
+
+main > article > ul.h3-2{
+    background-color: var(--cor07);
+    color: var(--cor06);
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /*Text-indent é o espaço no inicio do parágrafo*/
+    font-size: 1em;
+    line-height: 2em; /*Altura entre linhas*/
+}
+
+main strong{
+    color: var(--cor04);
+    background-color: var(--cor05);
+    border-radius: 5%;
+    padding: 2px 6px;
+
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+    background-color: var(--cor07);
+    padding: 2px 6px;
+    border-radius: 15px;
+}
+
+main a:hover{
+    background-color: var(--cor06);
+    color: var(--cor01);
+    text-decoration: underline;
+}
+
+
+main img{
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+main img.pequena{
+    min-width: 200px;
+    max-width: 600px;
+    display: block;
+    margin: auto
+}
+
+div.video{
+    background-color: var(--cor01);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.4%;
+
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor05);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+
+}
+
+aside > h3{
+    background-color: var(--cor06);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+aside > ul{
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0'; /*Não é compatível com todo navegador*/
+    padding: 10px;
+}
+
+
+
+aside > ul > li > abbr{
+    text-decoration: none;
+}
+
+aside > ul > li > abbr:hover{
+    background-color: var(--cor04);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+footer{
+    background-color: var(--cor05);
+    color: var(--cor01);
+    text-align: center;
+    min-width: 300px;
+    max-width: 1540px;
+    margin: auto;
+    padding: 5px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-color: var(--cor07);
+    color: var(--cor03);
+    padding: 5px;
+    text-decoration: underline;
+    border-radius: 10px;
+}

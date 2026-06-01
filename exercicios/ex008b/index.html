@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript.</p>
+    <p><mark><em>&uarr;Obeserve que os espaços das letras não são padronizados, cada um ocupa um espaço diferente, dificultando assim a leitura do item.&uarr;</em></mark></p>
+    <hr>
+
+    <p>Agora observe o mesmo comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript, com a tag code.</p>
+    <p><mark><em>&uarr;Obeserve que os espaços das letras agora são padronizados, e cada um ocupa o mesmo tamanho, facilitando assim a leitura do item.&uarr;</em></mark></p>
+    <hr>
+
+    <h2>CODE</h2>
+    <p>No exemplo abaixo utilizamos a tag code, para escrever um código python, e o pensamento mais lógico é achar que ele vai apresentar a identação feita, porém olha como fica:</p>
+    <code>
+        num = int(input('Digite um numero'))
+        if num % 2 == 0:
+            print(f'0 número {num} é PAR')
+        else:
+            print(f'0 número {num} é IMPAR)
+        print('Fim do programa')
+    </code>
+    <hr>
+
+    <br>
+    <p>Para que o code possa vir com a identação, é interessante envelopar ele com a tag pre, olha como fica &darr;</p>
+    <pre>
+        <code>
+    num = int(input('Digite um numero'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+    else:
+        print(f'0 número {num} é IMPAR)
+    print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo T. Harv Eker, no seu livro os segredos da mente milionária:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Os_segredos_da_mente_milion%C3%A1ria/FeQixp6F26MC?hl=pt-BR&gbpv=0">
+         O segredo do sucesso não é tentar evitar os problemas nem se livrar deles, mas crescer pessoalmente para se tornar maior do que qualquer adversidade.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr>. Está sendo muito bom.</p>
+
+    <h2>Texto invertido</h2>
+    <h3>bdo dir="rtl" (right to left)</h3>
+    <p><bdo dir="rtl">Estou aprendendo html</bdo></p>
+
+    <h3>bdo dir="ltr" (left to right)</h3>
+    <p><bdo dir="ltr">estou aprendendo CSS</bdo></p>
+</body>
+</html>

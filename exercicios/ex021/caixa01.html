@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*Short Hands - simplificando os códigos*/
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue;
+            */
+
+            border: 10px solid blue; 
+            /*Todos os elementos width, style, color estão dentro do elemento border separado por espaço e no final com ponto e virgula*/
+
+            /*Short Hands - simplificando os códigos*/
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            padding: 10px 10px 10px 10px;
+            /*Todos os elementos top, right, bottom, left estão dentro do elemento padding separados por espaço e ponto e virgula no final.*/
+            /*Lembrando que a escrita é igual ao funcionamento de um relógio, começa no top, right, bottom e left*/
+            /*Também pode ser escrito de outras duas formas: 
+            padding: 10px (dessa forma todos os valores serão iguais)
+            
+            padding: 10px 20px (dessa forma os valores top e bottom serão 10px e right e left serão 20px*/
+
+            /*Short Hands - Simplificando os códigos*/
+            /*
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            */
+            margin: 10px 10px 20px 10px;
+            /*Todos os elementos top, right, bottom, left estão dentro do elemento padding separados por espaço e ponto e virgula no final.*/
+            /*Caso haja necessidade de centralizar as margens de forma automatica, podemos inserir o auto na posição que deseja centralizar
+            margin: 10px auto 10px auto (dessa forma top e bottom estão com o valor de 10px e right e left estão centralizando de forma automatica, utilizando a palavra auto*/
+
+
+            /*margin: auto; serve para centralizar a margem ao meio da tela*/
+            /*Short Hands - Simplificando os códigos*/
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: gold;
+            */
+            outline: 5px dashed gold;
+        }
+
+        a{
+            /*Short Hands - Simplificando os códigos*/
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            */
+            border: 5px solid red;
+
+            padding: 5px 5px 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos tambem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona. </p>
+</body>
+</html>

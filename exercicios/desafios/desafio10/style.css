@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header{
+    background-color: green;
+    padding: 10px;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.p1{
+    color: aliceblue;
+    text-align: center;
+}
+
+nav{
+    color: aliceblue;
+    text-decoration:dotted;
+}
+

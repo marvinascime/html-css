@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="midia/Meu-Video-1920-1080.webm" width="500" controls></video>
+    <hr>
+
+    <p>Abaixo iremos criar alguns sources para poder ter mais de um tipo de formato de video, para caso o navegador da pessoa não rode com o padrão poder rodar com os outros.</p>
+
+    <video width="500" poster="" controls muted autoplay loop>
+        <source src="midia/Meu-Video-1920-1080convert.mp4" type="video/mp4">
+        <source src="midia/Meu-Video-1920-1080.webm" type="video/webm">
+        <source src="midia/Meu-Video-1920-1080.m4v" type="video/m4v">
+        <source src="midia/Meu-Video-1920-1080.ogv" type="video/ogv">
+        <p>Seu navegador nao tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <hr>
+
+    <h1>Incorporando video do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=AUBoVSRBLYTdSvZu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Incorporando video do Vimeo</h1>
+
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/185871317?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:76%;height:76%;" title="Simone Cirillo - 2016 Character Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+</body>
+</html>
