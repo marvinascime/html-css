@@ -12,6 +12,7 @@
 }
 
 body{
+    min-height: 100vh;
     background-color: white;
 
 }
@@ -41,10 +42,15 @@ p{
 main > section.normal{
     background-color: blueviolet;
     padding: 20px;
+    padding-bottom: 2em;
 }
 
 main > section.imagem{
     padding: 20px;
+}
+
+section.normal > p{
+    padding-bottom: 2em;
 }
 
 section.imagem > p{
@@ -58,7 +64,6 @@ section.imagem > p{
 
 #img1{
     background-image: url('imagens/flores.jpg');
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left bottom;
     max-width: 1000px;
