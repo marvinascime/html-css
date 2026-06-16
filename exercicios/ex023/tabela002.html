@@ -10,8 +10,9 @@
         }
 
         table{
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -31,14 +32,38 @@
             text-align: center;
         }
 
-        thead{
-            background-color: dimgrey;
-            color:midnightblue;
+        caption{
+            font-size: 1.5em;
             font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
         }
 
-        tfoot{
-            color: crimson;
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0px;
+            background-color: gray;
+        }
+
+            /*
+            odd - Impares
+            even - pares
+            */
+
+        tbody > tr:nth-child(odd) {
+            background-color:cadetblue;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: aquamarine;
         }
 
 
@@ -52,9 +77,9 @@
     TABLE
         CAPTION
         THEAD - cabeçalho tabela
-            TR, TD, TH
+            TR, TD(dados), TH (titulos)
         TBODY - Corpo da tabela
-            TR, TD, TH
+            TR, TD(dados), TH(titulos)
         TFOOT - Rodapé da tabela
             TR, TD, TH
     -->
@@ -63,9 +88,9 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>UF</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col">UF</th>
             </tr>
         </thead>
         <tbody>
@@ -208,7 +233,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td class="num" colspan="2"><strong>213.421.037</strong></td>
             </tr>
         </tfoot>
